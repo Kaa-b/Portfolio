@@ -1,0 +1,45 @@
+.container {
+    align-items: center;
+    background-color: var(--dark-blue);
+    border-bottom: 2px solid var(--white) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+
+    height: var(--navbar-height);
+    width: auto;
+}
+
+.logo {
+    height: auto;
+    width: 8rem;
+}
+
+.navItems {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+    gap: 3rem;
+
+    height: 29px;
+    width: 566px;
+}
+
+.item {
+    color: var(--white);
+    font-size: 1rem;
+    text-align: center;
+
+    height: auto;
+    width: 6rem;
+}
+
+.contact {
+    text-align: right;
+    
+    height: auto;
+    width: 8rem;
+}
