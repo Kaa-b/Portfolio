@@ -2,7 +2,7 @@ import Head from "next/head"
 import Image from "next/image"
 
 import Navbar from "../components/nav/navbar"
-// import Footer from "../components/footer/footer"
+import Footer from "../components/footer/footer"
 
 import styles from "@/styles/Home.module.css"
 
@@ -21,7 +21,7 @@ export default function Home() {
       <main>
       Home page
       </main>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   )
 }

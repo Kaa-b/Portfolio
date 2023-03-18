@@ -1,0 +1,36 @@
+.container {
+    align-items: center;
+    background: var(--dark-blue);
+    display: flex;
+    flex-direction: row;
+    gap: auto;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    z-index: 30;
+    
+    height: var(--footer-height);
+    width: auto;
+}
+
+/* .up {} */
+
+.email {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.socials {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+
+    height: auto;
+    width: auto;
+
+}
+
+/* .github {} */
+
+/* .linkedIn {} */

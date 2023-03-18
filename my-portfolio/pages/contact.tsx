@@ -1,7 +1,7 @@
 import Head from "next/head"
 
 import Navbar from "../components/nav/navbar"
-// import Footer from "../components/footer/footer"
+import Footer from "../components/footer/footer"
 
 export default function Contact() {
   return (
@@ -14,7 +14,7 @@ export default function Contact() {
       <main>
         Page Contact
       </main>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   )
 }
