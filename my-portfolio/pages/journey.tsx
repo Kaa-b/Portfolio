@@ -1,7 +1,10 @@
 import Head from "next/head"
+import Image from "next/image"
 
 import Navbar from "../components/nav/navbar"
 import Footer from "../components/footer/footer"
+
+import styles from "@/styles/journey.module.css"
 
 export default function Journey() {
   return (
@@ -10,11 +13,25 @@ export default function Journey() {
         <title>Journey</title>
         <meta name="description" content="Journey page" />
       </Head>
-      <Navbar />
-      <main>
-      Journey page
-      </main>
-      <Footer/>
+      <div className={styles.body}>
+        <nav className={styles.nav}>
+          <Navbar />
+        </nav>
+        <main className={styles.container}>
+          <h1 className={styles.description}>
+          Preparing <b>Journey</b> page for take-off...
+          </h1>
+          <Image
+            src="/rocketinBuilding.svg"
+            alt="People building a rocket"
+            width="300"
+            height="300"
+          />
+        </main>
+        <footer className={styles.footer}>
+          <Footer/>
+        </footer>
+      </div>
     </>
   )
 }
