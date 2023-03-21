@@ -17,7 +17,7 @@ const Footer = () => {
         <p>marine.bauer5@gmail.com</p>
       </div>
       <div className={styles.socials}>
-        <a className={styles.github} >
+        <a className={styles.github} href="https://github.com/Kaa-b" >
           <Image
             src="/github.svg"
             alt="Redirect to my github page"
@@ -25,7 +25,7 @@ const Footer = () => {
             height="33"
           />
         </a>
-        <a className={styles.linkedIn}>
+        <a className={styles.linkedIn} href="https://www.linkedin.com/in/marine-bauer/">
           <Image
             src="/linkedIn.svg"
             alt="Redirect to my linkedIn page"

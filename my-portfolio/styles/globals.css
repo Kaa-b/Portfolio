@@ -27,11 +27,12 @@ pre {
 
 
 :root {
-  --dark-blue: #2A0961;
+  /* Uses for gradiant */
+  --dark-blue: #051073;
+  --dark-blue-lighter: #2D1E8F;
+  --light-blue: #978BDF;
+  
   --white: #F8F4FF;
-
-  --background-gradient-first: #2A0961;
-  --background-gradient-last: #AB8BDF;
 
   --sidebar-length: 20rem;
   --navbar-height: 2rem;
