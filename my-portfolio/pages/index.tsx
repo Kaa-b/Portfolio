@@ -21,10 +21,52 @@ export default function Home() {
           <Navbar />
         </nav>
         <main className={styles.container}>
-          <h1 className={styles.description}>
-          Preparing <b>Home</b> page for take-off...
-          </h1>
-        
+          <div className={styles.header}>
+            <div className={styles.heroImage}>
+              <div className={styles.profilePicture}>
+                <Image
+                  src="/profilePicture.svg"
+                  alt="My profile picture"
+                  width="259"
+                  height="378"
+                />
+              </div>
+              <div className={styles.socials}>
+                <a className={styles.github} href="https://github.com/Kaa-b" >
+                  <Image
+                    src="/github.svg"
+                    alt="Redirect to my github page"
+                    width="48"
+                    height="48"
+                  />
+                </a>
+                <a className={styles.linkedIn} href="https://www.linkedin.com/in/marine-bauer/">
+                  <Image
+                    src="/linkedIn.svg"
+                    alt="Redirect to my linkedIn page"
+                    width="48"
+                    height="48"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className={styles.description}></div>
+          </div>
+          <div className={styles.latestProject}>
+            <h1 className={styles.description}>
+              Latest project
+            </h1>
+          </div>
+          <div className={styles.devEvolution}>
+            <h1 className={styles.description}>
+              Dev Evolution
+            </h1>
+          </div>
+          <div className={styles.contact}>
+            <h1 className={styles.description}>
+              Contact
+            </h1>
+          </div>       
         </main>
         <footer className={styles.footer}>
           <Footer/>
