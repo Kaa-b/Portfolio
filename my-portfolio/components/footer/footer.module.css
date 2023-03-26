@@ -1,6 +1,7 @@
 .container {
     align-items: center;
     background: var(--dark-blue);
+    bottom:0px;
     display: flex;
     flex-direction: row;
     gap: auto;
@@ -10,9 +11,18 @@
     
     height: var(--footer-height);
     width: auto;
+   
 }
 
-/* .up {} */
+.up { 
+    opacity: 100%;
+    transition: 0.2s;
+}
+
+.up:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
 
 .email {
     color: var(--white);
@@ -31,6 +41,11 @@
 
 }
 
-/* .github {} */
+.socialItem {
+    opacity: 100%;
+    transition: 0.2s;
+}
 
-/* .linkedIn {} */
+.socialItem:hover {
+    opacity: 70%;
+}
