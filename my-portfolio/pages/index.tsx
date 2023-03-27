@@ -2,10 +2,18 @@ import Head from "next/head"
 import Image from "next/image"
 import cls from "classnames"
 
+
 import Navbar from "../components/nav/navbar"
 import Footer from "../components/footer/footer"
 
 import styles from "@/styles/home.module.css"
+
+export type Img = {
+  src: string
+  alt: string
+  width: any //cannot import type SafeNumber
+  height: any 
+}
 
 
 export default function Home() {
