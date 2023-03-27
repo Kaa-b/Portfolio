@@ -5,6 +5,7 @@ import cls from "classnames"
 
 import Navbar from "../components/nav/navbar"
 import Footer from "../components/footer/footer"
+import Screen from "../components/screen/screen"
 
 import styles from "@/styles/home.module.css"
 
@@ -15,8 +16,8 @@ export type Img = {
   height: any 
 }
 
-
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -28,7 +29,7 @@ export default function Home() {
       <div className={styles.body}>
         <Navbar />
         <main className={styles.container}>
-          <div className={styles.header}>
+          <section className={styles.header}>
             <div className={styles.heroImage}>
               <Image
                 src="/profilePicture.svg"
@@ -39,7 +40,7 @@ export default function Home() {
               <div className={styles.socials}>
                 <a className={styles.socialItem} href="https://github.com/Kaa-b" >
                   <Image
-                    src="/github.svg"
+                    src="/icons/github.svg"
                     alt="Redirect to my github page"
                     width="40"
                     height="40"
@@ -47,7 +48,7 @@ export default function Home() {
                 </a>
                 <a className={styles.socialItem} href="https://www.linkedin.com/in/marine-bauer/">
                   <Image
-                    src="/linkedIn.svg"
+                    src="/icons/linkedIn.svg"
                     alt="Redirect to my linkedIn page"
                     width="40"
                     height="40"
@@ -72,33 +73,42 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className={styles.latestProject}>
+          </section>
+          <section className={styles.latestProject}>
             <h1 className={styles.title}>Latest project</h1>
             <div className={styles.latestProjectContent}>
               <div className={styles.latestProjectdescription}>
                 <p className={styles.description}>Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
               </div>
-              <a className={styles.screen} href="https://street-contact.vercel.app/">
-                <Image
-                  src="/screen.svg"
-                  alt="My latest project"
-                  width="430"
-                  height="346"
-                />
-              </a>
+              <Screen 
+                href="https://street-contact.vercel.app/" 
+                src = "/screens/Street-contact.PNG"
+                alt="My latest project"
+                width="400"
+                height="400"
+              />
             </div>
-          </div>
-          <div className={styles.devEvolution}>
+          </section>
+          <section className={styles.devEvolution}>
             <h1 className={styles.title}>
               Dev Evolution
             </h1>
-          </div>
-          <div className={styles.contact}>
+            <div className={styles.serpentineContainer}>
+              <div className={styles.start}>
+                <Image
+                  src="/serpentine/start.svg"
+                  alt="Picture of me thinking"
+                  width="220"
+                  height="220"
+                />
+              </div>
+            </div>
+          </section>
+          <section className={styles.contact}>
             <h1 className={styles.title}>
               Contact
             </h1>
-          </div>       
+          </section>       
         </main>
         <Footer/>
       </div>

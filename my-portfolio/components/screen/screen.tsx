@@ -5,19 +5,33 @@ import type { Img } from "../../pages/index"
 
 type Props = {
     href: string
-    img: Img
+    src: string,
+    alt: string,
+    width: any,
+    height: any,
 }
 
-
-const Screen = ({href, img }: Props) => {
+const Screen = ({href, src, alt, width, height}: Props) => {
+  const screenWidth = width - (width*0.07)
+  const screenHeight= screenWidth*3/4
   return (
-    <a className={styles.screen} href={href}>
-      <Image
-        src={img.src}
-        alt={img.alt}
-        width={img.width}
-        height={img.height}
-      />
+    <a className={styles.screenWrapper} href={href}>
+      <div className={styles.background}>
+        <Image
+          src="/screens/screen.svg"
+          alt="Laptop bacground"
+          width={width}
+          height={height}
+        />
+      </div>
+      <div className={styles.screen}>
+        <Image
+          src={src}
+          alt={alt}
+          width={screenWidth}
+          height={screenHeight}
+        />
+      </div>
     </a>
   )
 }

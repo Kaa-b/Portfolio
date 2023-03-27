@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className={styles.container}>
       <div className={styles.up}>
         <Image
-          src="/up.svg"
+          src="/icons/up.svg"
           alt="Button to go back at the top of the page"
           width="32"
           height="32"
@@ -19,7 +19,7 @@ const Footer = () => {
       <div className={styles.socials}>
         <a className={styles.socialItem} href="https://github.com/Kaa-b" >
           <Image
-            src="/github.svg"
+            src="/icons/github.svg"
             alt="Redirect to my github page"
             width="32"
             height="33"
@@ -27,7 +27,7 @@ const Footer = () => {
         </a>
         <a className={styles.socialItem} href="https://www.linkedin.com/in/marine-bauer/">
           <Image
-            src="/linkedIn.svg"
+            src="/icons/linkedIn.svg"
             alt="Redirect to my linkedIn page"
             width="32"
             height="33"
