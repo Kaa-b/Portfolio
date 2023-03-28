@@ -13,13 +13,13 @@ type Props = {
 
 const Screen = ({href, src, alt, width, height}: Props) => {
   const screenWidth = width - (width*0.07)
-  const screenHeight= screenWidth*3/4
+  const screenHeight= screenWidth*0.65
   return (
     <a className={styles.screenWrapper} href={href}>
       <div className={styles.background}>
         <Image
-          src="/screens/screen.svg"
-          alt="Laptop bacground"
+          src="/screens/screen.png"
+          alt="Laptop background"
           width={width}
           height={height}
         />

@@ -2,6 +2,7 @@ import Head from "next/head"
 import Image from "next/image"
 import cls from "classnames"
 
+import profilePicture from "../public/profilePicture.png"
 
 import Navbar from "../components/nav/navbar"
 import Footer from "../components/footer/footer"
@@ -32,10 +33,10 @@ export default function Home() {
           <section className={styles.header}>
             <div className={styles.heroImage}>
               <Image
-                src="/profilePicture.svg"
+                src={profilePicture}
                 alt="My profile picture"
-                width="259"
-                height="378"
+                width={259}
+                height={378}
               />
               <div className={styles.socials}>
                 <a className={styles.socialItem} href="https://github.com/Kaa-b" >
@@ -80,13 +81,14 @@ export default function Home() {
               <div className={styles.latestProjectdescription}>
                 <p className={styles.description}>Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
               </div>
-              <Screen 
-                href="https://street-contact.vercel.app/" 
-                src = "/screens/Street-contact.PNG"
-                alt="My latest project"
-                width="400"
-                height="400"
-              />
+              <a href="https://street-contact.vercel.app/" className={styles.latestProjectScreen}>
+                <Image
+                  src = "/screens/latest-project-screen.png"
+                  alt="My latest project"
+                  fill
+                  className={styles.latestProjectScreen}
+                />
+              </a>
             </div>
           </section>
           <section className={styles.devEvolution}>
@@ -96,10 +98,10 @@ export default function Home() {
             <div className={styles.serpentineContainer}>
               <div className={styles.start}>
                 <Image
-                  src="/serpentine/start.svg"
+                  src="/serpentine/start.png"
                   alt="Picture of me thinking"
-                  width="220"
-                  height="220"
+                  width={220}
+                  height={220}
                 />
               </div>
             </div>
