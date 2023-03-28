@@ -18,13 +18,13 @@
 
 .navItems {
     align-items: center;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
    
     gap: 3rem;
 
-    height: 29px;
+    height: auto;
     width: 566px;
 }
 
@@ -38,12 +38,62 @@
 }
 
 .contact {
-    text-align: right;
+    display: none;
+    justify-content: flex-end;
     
     height: auto;
     width: 8rem;
 }
 
-@media screen  and (min-width: 1280px) {
+.menuNavigation {
+    display: flex;
+}
+
+.menuButton {
+    background-color: transparent;
+    border: none;
+    opacity: 100%;
+    transition: 0.2s;
+}
+
+.menuButton:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.navDropdown {
+    align-items: stretch;
+    border-bottom: 2px solid var(--white);
+    display: flex;
+    flex-direction: column;
     
+    height: auto;
+    width: 100%;
+}
+
+.dropdownItem {
+    align-items: center;
+    align-content: center;
+    border: 1px solid var(--dark-blue-lighter);
+    box-sizing: border-box;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    
+    height: 3rem;
+    width: 100%;
+}
+
+@media screen  and (min-width: 700px) {
+    .navItems {
+        display: flex;
+    }
+
+    .contact {
+        display: flex;
+    }
+
+    .menuNavigation {
+        display: none;
+    }
 }
