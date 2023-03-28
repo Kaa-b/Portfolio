@@ -76,6 +76,7 @@
     align-content: center;
     border: 1px solid var(--dark-blue-lighter);
     box-sizing: border-box;
+    color: var(--white);
     display: flex;
     font-size: 1.5rem;
     justify-content: center;
