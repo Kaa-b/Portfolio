@@ -162,17 +162,17 @@
 }
 
 .serpentineContainer {
-    background: center url("../public/serpentine/serpentine.svg") no-repeat;
-    background-size: contain;
-    position: relative;
-    height: 1335px;
+    background: 20% / contain no-repeat url("../public/serpentine/serpentineMobile.png");
+    
+    display: flex;
+    height: 100%;
     width: 100%;
 }
 
 .start {
-    position: absolute;
+    display: grid;
     top: -5%;
-    left: 15%;
+    left: 10%;
 }
 
 @media screen  and (min-width: 1280px) {
@@ -193,18 +193,11 @@
     }
 
     .serpentineContainer {
-        background: center url("../public/serpentine/serpentine.svg") no-repeat;
-        background-size: contain;
-        position: relative;
-        height: 1335px;
-        width: 100%;
+        background: center / contain no-repeat url("../public/serpentine/serpentineDesktop.png");
+        background-size: 100% 100%;
     }
     
-    .start {
-        position: absolute;
-        top: -5%;
-        left: 15%;
-    }
+
 }
 
 @media screen  and (min-width: 1800px) {

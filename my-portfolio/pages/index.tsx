@@ -97,12 +97,84 @@ export default function Home() {
             </h1>
             <div className={styles.serpentineContainer}>
               <div className={styles.start}>
-                <Image
+                <div className={styles.firstSite}>
+                  <Screen
+                    href="https://street-contact.vercel.app/"
+                    src="/screens/Street-contact.PNG"
+                    alt="Street contact project"
+                    width="326"
+                    height="262"
+                  />
+                </div>
+                <div className={styles.tetris}>
+                  <Screen
+                    href="https://street-contact.vercel.app/"
+                    src="/screens/Street-contact.PNG"
+                    alt="Street contact project"
+                    width="326"
+                    height="262"
+                  />
+                </div>
+                <div className={styles.movieDB}>
+                  <Screen
+                    href="https://street-contact.vercel.app/"
+                    src="/screens/Street-contact.PNG"
+                    alt="Street contact project"
+                    width="326"
+                    height="262"
+                  />
+                </div>
+                <div className={styles.msclPortfolio}>
+                  <Screen
+                    href="https://street-contact.vercel.app/"
+                    src="/screens/Street-contact.PNG"
+                    alt="Street contact project"
+                    width="326"
+                    height="262"
+                  />
+                </div>
+                <div className={styles.joinedSII}>
+                  <Screen
+                    href="https://street-contact.vercel.app/"
+                    src="/screens/Street-contact.PNG"
+                    alt="Street contact project"
+                    width="326"
+                    height="262"
+                  />
+                </div>
+                <div className={styles.ztm}>
+                  <Screen
+                    href="https://street-contact.vercel.app/"
+                    src="/screens/Street-contact.PNG"
+                    alt="Street contact project"
+                    width="326"
+                    height="262"
+                  />
+                </div>
+                <div className={styles.streetContact}>
+                  <Screen
+                    href="https://street-contact.vercel.app/"
+                    src="/screens/Street-contact.PNG"
+                    alt="Street contact project"
+                    width="326"
+                    height="262"
+                  />
+                </div>
+                <div className={styles.myPortfolio}>
+                  <Screen
+                    href="https://street-contact.vercel.app/"
+                    src="/screens/Street-contact.PNG"
+                    alt="Street contact project"
+                    width="326"
+                    height="262"
+                  />
+                </div>
+                {/* <Image
                   src="/serpentine/start.png"
                   alt="Picture of me thinking"
                   width={220}
                   height={220}
-                />
+                /> */}
               </div>
             </div>
           </section>
