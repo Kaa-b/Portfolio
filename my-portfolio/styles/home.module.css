@@ -163,16 +163,18 @@
 
 .serpentineContainer {
     background: 20% / contain no-repeat url("../public/serpentine/serpentineMobile.png");
-    
     display: flex;
+    padding: 15rem 0;
     height: 100%;
     width: 100%;
 }
 
 .start {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     top: -5%;
     left: 10%;
+    gap: 4rem;
 }
 
 @media screen  and (min-width: 1280px) {
@@ -195,6 +197,7 @@
     .serpentineContainer {
         background: center / contain no-repeat url("../public/serpentine/serpentineDesktop.png");
         background-size: 100% 100%;
+        padding: 0;
     }
     
 
