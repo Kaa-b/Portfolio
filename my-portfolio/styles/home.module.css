@@ -13,17 +13,18 @@
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
-    padding: 0rem 4rem;
+    padding: 2rem 4rem;
    
     height: 100%;
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ MAIN SECTION HEADER ~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .header {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding-top: 5rem;
     
     height: auto;
     width: auto;
@@ -85,7 +86,6 @@
 }
 
 .description {
-    /* font-family: 'Inter'; */
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -131,6 +131,8 @@
     -webkit-transform: rotate(-45deg);
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ MAIN SECTION LATEST PROJECT ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 .latestProject {
     align-items: center;
     display: flex;
@@ -155,6 +157,8 @@
     height: 300px;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ MAIN SECTION DEV EVOLUTION ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 .devEvolution {
     display: flex;
     flex-direction: column;
@@ -167,8 +171,10 @@
 .serpentineContainer {
     background: center / contain no-repeat url("../public/serpentine/serpentineMobile.png");
     background-size: 5rem 100%;
-    padding: 15rem 0;
-    height: 100%;
+    padding: 10rem 0;
+    position: relative;
+
+    height: 148rem;
     width: 100%;
 }
 
@@ -176,7 +182,7 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 5rem;
     justify-content: center;
 }
 
@@ -184,19 +190,41 @@
     position: relative;
     object-fit: contain;
     width: 100%;
-    height: 262px;
+    height: 230px;
 }
 
+.start {
+    position: absolute;
+    top: -3.5rem;
+    object-fit: contain;
+    width: 100%;
+    height: 150px;
+}
+
+/* ######################## > 400PX ########################*/
+
 @media screen  and (min-width: 400px) {
-    .serpentineWrapper {
-        gap: 6rem;
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ > 400PX SECTION DEV EVOLUTION ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+    .serpentineContainer {
+        padding: 17rem 0;
+    }
+
+    .start {
+        height: 200px;
     }
 }
+
+/* ######################## > 1200PX ########################*/
 
 @media screen  and (min-width: 1280px) {
     .container {
-        padding: 0rem 6rem;
+        padding: 6rem;
     }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ > 1200PX SECTION HEADER ~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     .header {
         flex-direction: row;
@@ -206,6 +234,7 @@
         height: 400px;
     }
     
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ > 1200PX SECTION LATEST PROJECT ~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     .latestProjectContent {
         flex-direction: row;
@@ -215,18 +244,52 @@
        min-width: 400px;
     }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ > 1200PX SECTION DEV EVOLUTION ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
     .serpentineContainer {
         background: center / contain no-repeat url("../public/serpentine/serpentineDesktop.png");
-        background-size: 100% 100%;
+        background-size: 90% 100%;
         padding: 0;
     }
-    
 
-}
+    .serpentineWrapper {
+        gap: 2rem;
+    }
 
-@media screen  and (min-width: 1800px) {
     .start {
-        left: 20%;
+        left: -45%;
+        top: 1.5rem;
+        height: 200px;
+    }
+
+    .firstSite {
+    }
+    
+    .tetris {
+        left: 40%;
+    }
+
+    .movieDB {
+        
+    }
+
+    .msclPortfolio {
+        left: -40%;
+    }
+
+    .joinedSII {
+        
+    }
+
+    .ztm {
+        left: 40%;
+    }
+
+    .streetContact {
+        
+    }
+
+    .myPortfolio {
+        left: -40%;
     }
 }
-

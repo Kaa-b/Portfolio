@@ -82,7 +82,7 @@ export default function Home() {
               </div>
               <a href="https://street-contact.vercel.app/" className={styles.latestProjectScreen}>
                 <Image
-                  src = "/screens/latest-project-screen.png"
+                  src = "/serpentine/screens/street-contact-screen.png"
                   alt="My latest project"
                   fill
                   className={styles.latestProjectScreen}
@@ -94,11 +94,19 @@ export default function Home() {
             <h1 className={styles.title}>
               Dev Evolution
             </h1>
-            <div className={styles.serpentineContainer}>
+            <div className={styles.serpentineContainer}>           
               <div className={styles.serpentineWrapper}>
+                <a  href="https://street-contact.vercel.app/" className={styles.start}>
+                  <Image
+                    src="/serpentine/start.png"
+                    alt="Street contact project"
+                    fill
+                    className={styles.start}
+                  />
+                </a>
                 <a  href="https://street-contact.vercel.app/" className={cls(styles.devEvolutionScreen, styles.firstSite)}>
                   <Image
-                    src="/screens/latest-project-screen.png"
+                    src="/serpentine/screens/latest-project-screen.png"
                     alt="Street contact project"
                     fill
                     className={styles.devEvolutionScreen}
@@ -106,55 +114,55 @@ export default function Home() {
                 </a>
                 <a  href="https://street-contact.vercel.app/" className={cls(styles.devEvolutionScreen, styles.tetris)}>
                   <Image
-                    src="/screens/Street-contact.PNG"
+                    src="/serpentine/screens/street-contact-screen.png"
                     alt="Street contact project"
                     fill
                     className={styles.devEvolutionScreen}
                   />
                 </a>
-                <a href="https://street-contact.vercel.app/" className={cls(styles.devEvolutionScreen, styles.movieDB)}>
+                <a href="https://moviedatabase-github.netlify.app" className={cls(styles.devEvolutionScreen, styles.movieDB)}>
                   <Image
-                    src="/screens/Street-contact.PNG"
+                    src="/serpentine/screens/movieDB-screen.png"
                     alt="Street contact project"
                     fill
                     className={styles.devEvolutionScreen}
                   />
                 </a>
-                <a href="https://street-contact.vercel.app/" className={cls(styles.devEvolutionScreen, styles.msclPortfolio)}>
+                <a href="https://mscl-photography.netlify.app" className={cls(styles.devEvolutionScreen, styles.msclPortfolio)}>
                   <Image
-                    src="/screens/Street-contact.PNG"
+                    src="/serpentine/screens/mscl-portfolio-screen.png"
                     alt="Street contact project"
                     fill
                     className={styles.devEvolutionScreen}
                   />
                 </a>
-                <a  href="https://street-contact.vercel.app/" className={cls(styles.devEvolutionScreen, styles.joinedSII)}>
+                <a  href="https://sii-group.com/fr-FR" className={cls(styles.devEvolutionScreen, styles.joinedSII)}>
                   <Image
-                    src="/screens/Street-contact.PNG"
+                    src="/serpentine/screens/joinedSII-screen.png"
                     alt="Street contact project"
                     fill
                     className={styles.devEvolutionScreen}
                   />
                 </a>
-                <a  href="https://street-contact.vercel.app/" className={cls(styles.devEvolutionScreen, styles.ztm)}>
+                <a  href="https://zerotomastery.io" className={cls(styles.devEvolutionScreen, styles.ztm)}>
                   <Image
-                    src="/screens/Street-contact.PNG"
+                    src="/serpentine/screens/ztm-screen.png"
                     alt="Street contact project"
                     fill
                     className={styles.devEvolutionScreen}
                   />
                 </a>
-                <a  href="https://street-contact.vercel.app/" className={cls(styles.devEvolutionScreen, styles.streetContact)}>
+                <a  href="https://street-contact.vercel.app" className={cls(styles.devEvolutionScreen, styles.streetContact)}>
                   <Image
-                    src="/screens/Street-contact.PNG"
+                    src="/serpentine/screens/street-contact-screen.png"
                     alt="Street contact project"
                     fill
                     className={styles.devEvolutionScreen}
                   />
                 </a>
-                <a href="https://street-contact.vercel.app/" className={cls(styles.devEvolutionScreen, styles.myPortfolio)}>
+                <a href="https://portfolio-kaa-b.vercel.app" className={cls(styles.devEvolutionScreen, styles.myPortfolio)}>
                   <Image
-                    src="/screens/Street-contact.PNG"
+                    src="/serpentine/screens/my-portfolio-screen.png"
                     alt="Street contact project"
                     fill
                     className={styles.devEvolutionScreen}
