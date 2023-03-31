@@ -27,6 +27,7 @@
 .email {
     color: var(--white);
     font-size: 1rem;
+    display: none;
 }
 
 .socials {
@@ -48,4 +49,10 @@
 
 .socialItem:hover {
     opacity: 70%;
+}
+
+@media screen  and (min-width: 400px) {
+    .email {
+        display: flex;
+    }
 }
