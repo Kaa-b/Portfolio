@@ -2,11 +2,8 @@ import Head from "next/head"
 import Image from "next/image"
 import cls from "classnames"
 
-import profilePicture from "../public/profilePicture.png"
-
 import Navbar from "../components/nav/navbar"
 import Footer from "../components/footer/footer"
-import Screen from "../components/screen/screen"
 
 import styles from "@/styles/home.module.css"
 
@@ -32,12 +29,14 @@ export default function Home() {
         <main className={styles.container}>
           <section className={styles.header}>
             <div className={styles.heroImage}>
-              <Image
-                src={profilePicture}
-                alt="My profile picture"
-                width={259}
-                height={378}
-              />
+              <div className={styles.profilePicture}>
+                <Image
+                  src="/profilePicture.png"
+                  alt="My profile picture"
+                  fill
+                  className={styles.profilePicture}
+                />
+              </div>
               <div className={styles.socials}>
                 <a className={styles.socialItem} href="https://github.com/Kaa-b" >
                   <Image
