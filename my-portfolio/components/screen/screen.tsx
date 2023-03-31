@@ -20,16 +20,16 @@ const Screen = ({href, src, alt, width, height}: Props) => {
         <Image
           src="/screens/screen.png"
           alt="Laptop background"
-          width={width}
-          height={height}
+          fill
+          className={styles.image}
         />
       </div>
       <div className={styles.screen}>
         <Image
           src={src}
           alt={alt}
-          width={screenWidth}
-          height={screenHeight}
+          fill
+          className={styles.image}
         />
       </div>
     </a>

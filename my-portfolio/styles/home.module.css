@@ -139,12 +139,6 @@
     justify-content: center;
 }
 
-.latestProjectScreenWrapper {
-    position: relative;
-    width: 100%;
-    height: 300px;
-}
-
 .latestProjectScreen {
     position: relative;
     object-fit: contain;
@@ -162,19 +156,32 @@
 }
 
 .serpentineContainer {
-    background: 20% / contain no-repeat url("../public/serpentine/serpentineMobile.png");
-    display: flex;
+    background: center / contain no-repeat url("../public/serpentine/serpentineMobile.png");
+    background-size: 5rem 100%;
     padding: 15rem 0;
     height: 100%;
     width: 100%;
 }
 
-.start {
+.serpentineWrapper {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    top: -5%;
-    left: 10%;
-    gap: 4rem;
+    gap: 0;
+    justify-content: center;
+}
+
+.devEvolutionScreen {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+    height: 262px;
+}
+
+@media screen  and (min-width: 400px) {
+    .serpentineWrapper {
+        gap: 6rem;
+    }
 }
 
 @media screen  and (min-width: 1280px) {
