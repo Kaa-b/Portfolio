@@ -38,4 +38,6 @@ pre {
   --sidebar-length: 20rem;
   --navbar-height: 2rem;
   --footer-height: 4rem;
+  --screen-width: 19rem;
+  --padding-container: 4rem;
 }

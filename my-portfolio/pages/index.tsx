@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
+import Link from "next/link"
 import cls from "classnames"
 
 import Navbar from "../components/nav/navbar"
@@ -7,14 +8,19 @@ import Footer from "../components/footer/footer"
 
 import styles from "@/styles/home.module.css"
 
-export type Img = {
-  src: string
-  alt: string
-  width: any //cannot import type SafeNumber
-  height: any 
-}
-
 export default function Home() {
+
+  function scrollTo(id: string) {
+    let e = document.getElementById(id)
+  
+    if (e) {
+      e.scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+        inline: "start"
+      })
+    }
+  };
 
   return (
     <>
@@ -58,24 +64,20 @@ export default function Home() {
             </div>
             <div className={styles.introduction}>
               <h1 className={styles.title}>Welcome to my Website!</h1>
-              <p className={styles.description}>
-                Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit.
-              </p>
-              <p className={styles.description}>Keep scrolling to find out about my latest project</p>
               <div className={styles.redirection}>
                 <div className={styles.redirectionOption}>
-                  <p className={styles.description}>Pour voir mon parcours de formation en dev c’est par là !</p>
-                  <button className={cls(styles.arrow, styles.down)}></button>
+                  <p className={styles.description}>To discover my path to becoming a web developer, it&apos;s down there</p>
+                  <button className={cls(styles.arrow, styles.down)} onClick={() => {scrollTo("devEvolution")}}></button>
                 </div>
                 <div className={styles.redirectionOption}>
-                  <p className={styles.description}>Pour voir ma présentation c’est ici !</p>
-                  <button className={cls(styles.arrow, styles.right)}></button>
+                  <p className={styles.description}>And to find out more about me, it&apos;s over here</p>
+                  <Link href={"/presentation"} className={cls(styles.arrow, styles.right)}></Link>
                 </div>
               </div>
             </div>
           </section>
           <section className={styles.latestProject}>
-            <h1 className={styles.title}>Latest project</h1>
+            <h1 id="latestProject" className={styles.title}>Latest project</h1>
             <div className={styles.latestProjectContent}>
               <div className={styles.latestProjectdescription}>
                 <p className={styles.description}>Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
@@ -91,7 +93,7 @@ export default function Home() {
             </div>
           </section>
           <section className={styles.devEvolution}>
-            <h1 className={styles.title}>
+            <h1 id="devEvolution" className={styles.title}>
               Dev Evolution
             </h1>
             <div className={styles.serpentineContainer}>           
@@ -104,23 +106,7 @@ export default function Home() {
                     className={styles.start}
                   />
                 </a>
-                <a  href="https://street-contact.vercel.app/" className={cls(styles.devEvolutionScreen, styles.firstSite)}>
-                  <Image
-                    src="/serpentine/screens/latest-project-screen.png"
-                    alt="Street contact project"
-                    fill
-                    className={styles.devEvolutionScreen}
-                  />
-                </a>
-                <a  href="https://street-contact.vercel.app/" className={cls(styles.devEvolutionScreen, styles.tetris)}>
-                  <Image
-                    src="/serpentine/screens/street-contact-screen.png"
-                    alt="Street contact project"
-                    fill
-                    className={styles.devEvolutionScreen}
-                  />
-                </a>
-                <a href="https://moviedatabase-github.netlify.app" className={cls(styles.devEvolutionScreen, styles.movieDB)}>
+                <a href="https://moviedatabase-github.netlify.app" className={cls(styles.devEvolutionScreen, styles.movieDB, styles.devEvolutionPosition)}>
                   <Image
                     src="/serpentine/screens/movieDB-screen.png"
                     alt="Street contact project"
@@ -128,7 +114,7 @@ export default function Home() {
                     className={styles.devEvolutionScreen}
                   />
                 </a>
-                <a href="https://mscl-photography.netlify.app" className={cls(styles.devEvolutionScreen, styles.msclPortfolio)}>
+                <a href="https://mscl-photography.netlify.app" className={cls(styles.devEvolutionScreen, styles.msclPortfolio, styles.devEvolutionPosition)}>
                   <Image
                     src="/serpentine/screens/mscl-portfolio-screen.png"
                     alt="Street contact project"
@@ -136,7 +122,7 @@ export default function Home() {
                     className={styles.devEvolutionScreen}
                   />
                 </a>
-                <a  href="https://sii-group.com/fr-FR" className={cls(styles.devEvolutionScreen, styles.joinedSII)}>
+                <a  href="https://sii-group.com/fr-FR" className={cls(styles.devEvolutionScreen, styles.joinedSII, styles.devEvolutionPosition)}>
                   <Image
                     src="/serpentine/screens/joinedSII-screen.png"
                     alt="Street contact project"
@@ -144,7 +130,7 @@ export default function Home() {
                     className={styles.devEvolutionScreen}
                   />
                 </a>
-                <a  href="https://zerotomastery.io" className={cls(styles.devEvolutionScreen, styles.ztm)}>
+                <a  href="https://zerotomastery.io" className={cls(styles.devEvolutionScreen, styles.ztm, styles.devEvolutionPosition)}>
                   <Image
                     src="/serpentine/screens/ztm-screen.png"
                     alt="Street contact project"
@@ -152,7 +138,15 @@ export default function Home() {
                     className={styles.devEvolutionScreen}
                   />
                 </a>
-                <a  href="https://street-contact.vercel.app" className={cls(styles.devEvolutionScreen, styles.streetContact)}>
+                <a  href="https://discovery-coffee-stores.vercel.app/" className={cls(styles.devEvolutionScreen, styles.coffeeStores, styles.devEvolutionPosition)}>
+                  <Image
+                    src="/serpentine/screens/coffee-store-screen.png"
+                    alt="Street contact project"
+                    fill
+                    className={styles.devEvolutionScreen}
+                  />
+                </a>
+                <a  href="https://street-contact.vercel.app" className={cls(styles.devEvolutionScreen, styles.streetContact, styles.devEvolutionPosition)}>
                   <Image
                     src="/serpentine/screens/street-contact-screen.png"
                     alt="Street contact project"
@@ -160,7 +154,7 @@ export default function Home() {
                     className={styles.devEvolutionScreen}
                   />
                 </a>
-                <a href="https://portfolio-kaa-b.vercel.app" className={cls(styles.devEvolutionScreen, styles.myPortfolio)}>
+                <a href="https://portfolio-kaa-b.vercel.app" className={cls(styles.devEvolutionScreen, styles.myPortfolio, styles.devEvolutionPosition)}>
                   <Image
                     src="/serpentine/screens/my-portfolio-screen.png"
                     alt="Street contact project"
