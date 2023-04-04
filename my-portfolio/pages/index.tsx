@@ -98,14 +98,14 @@ export default function Home() {
             </h1>
             <div className={styles.serpentineContainer}>           
               <div className={styles.serpentineWrapper}>
-                <a  href="https://street-contact.vercel.app/" className={styles.start}>
+                <div className={styles.start}>
                   <Image
                     src="/serpentine/start.png"
                     alt="Street contact project"
                     fill
                     className={styles.start}
                   />
-                </a>
+                </div>
                 <a href="https://moviedatabase-github.netlify.app" className={cls(styles.devEvolutionScreen, styles.movieDB, styles.devEvolutionPosition)}>
                   <Image
                     src="/serpentine/screens/movieDB-screen.png"
